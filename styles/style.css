@@ -1,0 +1,106 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: 'Vazer';
+    src: url('../fonts/vazir-Black.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+body {
+    font-family: 'Vazer';
+    direction: rtl;
+}
+
+body #sel {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    margin-top: 100px;
+    width: 200px;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: rgb(91, 120, 146);
+    color: white;
+}
+
+body #sel>option {
+    padding: 10px 10px;
+    background-color: rgb(98, 137, 170);
+}
+
+body .maincontact {
+    display: flex;
+    position: absolute;
+    width: 700px;
+    right: 50%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    top: 200px;
+    flex-direction: column;
+}
+
+body .maincontact h3 {
+    background-color: #aa2a2a;
+    border: 2px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 5px 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+body .maincontact h3:hover {
+    background-color: #9c3c3c;
+}
+
+body .maincontact h3::before {
+    content: "+";
+    padding: 5px 5px;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+body .maincontact h3:hover::before {
+    color: white;
+}
+
+body .maincontact p {
+    background-color: rgb(95, 95, 95);
+    padding: 0px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 1s;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    /*margin-block-end: 0px;
+    margin-block-start: 0px;
+    */
+    height: 0px;
+}
+
+body .maincontact p.active {
+    display: flex;
+    padding: 30px 10px;
+    height: fit-content;
+}
